@@ -2,7 +2,12 @@
 import { computed } from 'vue';
 import { $t } from '@/locales';
 import { useThemeStore } from '@/store/modules/theme';
-import { themePageAnimationModeOptions, themeScrollModeOptions, themeTabModeOptions } from '@/constants/app';
+import {
+  resetCacheStrategyOptions,
+  themePageAnimationModeOptions,
+  themeScrollModeOptions,
+  themeTabModeOptions
+} from '@/constants/app';
 import { translateOptions } from '@/utils/common';
 import SettingItem from '../components/setting-item.vue';
 
@@ -22,6 +27,14 @@ const isWrapperScrollMode = computed(() => themeStore.layout.scrollMode === 'wra
 <template>
   <NDivider>{{ $t('theme.pageFunTitle') }}</NDivider>
   <TransitionGroup tag="div" name="setting-list" class="flex-col-stretch gap-12px">
+    <SettingItem key="0" :label="$t('theme.resetCacheStrategy.title')">
+      <NSelect
+        v-model:value="themeStore.resetCacheStrategy"
+        :options="translateOptions(resetCacheStrategyOptions)"
+        size="small"
+        class="w-120px"
+      />
+    </SettingItem>
     <SettingItem key="1" :label="$t('theme.scrollMode.title')">
       <NSelect
         v-model:value="themeStore.layout.scrollMode"
@@ -101,10 +114,10 @@ const isWrapperScrollMode = computed(() => themeStore.layout.scrollMode === 'wra
     >
       <NSwitch v-model:value="themeStore.footer.right" />
     </SettingItem>
-    <SettingItem v-if="themeStore.watermark" key="8" :label="$t('theme.watermark.visible')">
+    <SettingItem key="8" :label="$t('theme.watermark.visible')">
       <NSwitch v-model:value="themeStore.watermark.visible" />
     </SettingItem>
-    <SettingItem v-if="themeStore.watermark?.visible" key="8-1" :label="$t('theme.watermark.text')">
+    <SettingItem v-if="themeStore.watermark.visible" key="8-1" :label="$t('theme.watermark.text')">
       <NInput
         v-model:value="themeStore.watermark.text"
         autosize
@@ -113,6 +126,9 @@ const isWrapperScrollMode = computed(() => themeStore.layout.scrollMode === 'wra
         class="w-120px"
         placeholder="SoybeanAdmin"
       />
+    </SettingItem>
+    <SettingItem key="9" :label="$t('theme.header.multilingual.visible')">
+      <NSwitch v-model:value="themeStore.header.multilingual.visible" />
     </SettingItem>
   </TransitionGroup>
 </template>

@@ -1,6 +1,109 @@
 # Changelog
 
 
+## [v1.3.10](https://github.com/honghuangdc/soybean-admin/compare/v1.3.9...v1.3.10) (2024-12-16)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: support show tab when not loggedIn &nbsp;-&nbsp; by @soybeanjs [<samp>(ba381)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ba38119)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **deps**:
+  - reduced eslint version to 9.14.0 &nbsp;-&nbsp; by @soybeanjs [<samp>(af417)</samp>](https://github.com/honghuangdc/soybean-admin/commit/af4177e)
+- **projects**:
+  - fix route guard hook `onRouteSwitchWhenLoggedIn`. fixed #680 &nbsp;-&nbsp; by @soybeanjs in https://github.com/honghuangdc/soybean-admin/issues/680 [<samp>(ab985)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ab9858c)
+  - check if init userInfo when initAuthRoute. fixed #680 &nbsp;-&nbsp; by @soybeanjs in https://github.com/honghuangdc/soybean-admin/issues/680 [<samp>(9f4fb)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9f4fb8c)
+
+### &nbsp;&nbsp;&nbsp;🛠 Optimizations
+
+- **projects**:
+  - optimize router guard &nbsp;-&nbsp; by @soybeanjs [<samp>(0dfcf)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0dfcf18)
+  - use `defu` to fill added theme config &nbsp;-&nbsp; by @soybeanjs [<samp>(101b6)</samp>](https://github.com/honghuangdc/soybean-admin/commit/101b6f9)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: ✏️  add element-plus version link &nbsp;-&nbsp; by **一寸灰** in https://github.com/honghuangdc/soybean-admin/issues/679 [<samp>(5c6ab)</samp>](https://github.com/honghuangdc/soybean-admin/commit/5c6ab0b)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- rename env.d.ts to vite-env.d.ts &nbsp;-&nbsp; by @wzc520pyfm in https://github.com/honghuangdc/soybean-admin/issues/675 [<samp>(b93c2)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b93c203)
+- **projects**: update deps & fix vite config &nbsp;-&nbsp; by @soybeanjs [<samp>(3e0eb)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3e0eb72)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;[![wzc520pyfm](https://github.com/wzc520pyfm.png?size=48)](https://github.com/wzc520pyfm)&nbsp;&nbsp;
+[一寸灰](mailto:webzhangfei@163.com),&nbsp;
+
+## [v1.3.9](https://github.com/soybeanjs/soybean-admin/compare/v1.3.8...v1.3.9) (2024-11-17)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**:
+  - support scheduled detection and update system. close #657 &nbsp;-&nbsp; by **青菜白玉汤** in https://github.com/soybeanjs/soybean-admin/issues/669 and https://github.com/soybeanjs/soybean-admin/issues/657 [<samp>(d088f)</samp>](https://github.com/soybeanjs/soybean-admin/commit/d088f81)
+  - app version notification plugin support sub deploy path. close #668 &nbsp;-&nbsp; by **Soybean** in https://github.com/soybeanjs/soybean-admin/issues/668 [<samp>(a53eb)</samp>](https://github.com/soybeanjs/soybean-admin/commit/a53eb10)
+
+### &nbsp;&nbsp;&nbsp;🛠 Optimizations
+
+- **projects**: optimize code &nbsp;-&nbsp; by **Soybean** [<samp>(9ad5d)</samp>](https://github.com/soybeanjs/soybean-admin/commit/9ad5d71)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: refactor router guard. fix #655 &nbsp;-&nbsp; by **Soybean** in https://github.com/soybeanjs/soybean-admin/issues/667 and https://github.com/soybeanjs/soybean-admin/issues/655 [<samp>(09144)</samp>](https://github.com/soybeanjs/soybean-admin/commit/09144df)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: set the Chinese version of README as default &nbsp;-&nbsp; by **Soybean** [<samp>(9d28b)</samp>](https://github.com/soybeanjs/soybean-admin/commit/9d28b31)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by **Soybean** [<samp>(91de4)</samp>](https://github.com/soybeanjs/soybean-admin/commit/91de4a8)
+  - update deps &nbsp;-&nbsp; by **Soybean** [<samp>(0c809)</samp>](https://github.com/soybeanjs/soybean-admin/commit/0c809de)
+- **projects**:
+  - add desc for base url of app &nbsp;-&nbsp; by **Soybean** [<samp>(17d7e)</samp>](https://github.com/soybeanjs/soybean-admin/commit/17d7e52)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+
+[Soybean](mailto:soybeanjs@outlook.com),&nbsp;[青菜白玉汤](mailto:79054161+Azir-11@users.noreply.github.com)
+
+## [v1.3.8](https://github.com/soybeanjs/soybean-admin/compare/v1.3.7...v1.3.8) (2024-10-25)
+
+### &nbsp;&nbsp;&nbsp;🚨 Breaking Changes
+
+- **projects**: refactor route cache & support reset route cache strategy &nbsp;-&nbsp; by @soybeanjs [<samp>(b667e)</samp>](https://github.com/soybeanjs/soybean-admin/commit/b667eab)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **packages**:
+  - add subpackage `@sa/alova` &nbsp;-&nbsp; by @JOU-amjs in https://github.com/soybeanjs/soybean-admin/issues/640 [<samp>(2072f)</samp>](https://github.com/soybeanjs/soybean-admin/commit/2072f58)
+  - optimistic subpackage `@sa/alova` &nbsp;-&nbsp; by @JOU-amjs in https://github.com/soybeanjs/soybean-admin/issues/646 [<samp>(4b3ac)</samp>](https://github.com/soybeanjs/soybean-admin/commit/4b3ac11)
+- **projects**:
+  - login supports accessible operation. &nbsp;-&nbsp; by @Azir-11 in https://github.com/soybeanjs/soybean-admin/issues/637 [<samp>(cfaab)</samp>](https://github.com/soybeanjs/soybean-admin/commit/cfaab85)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **utils**: fix `isPC`. fixed #644 &nbsp;-&nbsp; by @soybeanjs in https://github.com/soybeanjs/soybean-admin/issues/644 [<samp>(47264)</samp>](https://github.com/soybeanjs/soybean-admin/commit/4726498)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(8dcda)</samp>](https://github.com/soybeanjs/soybean-admin/commit/8dcda38)
+- **projects**:
+  - update vscode extensions &nbsp;-&nbsp; by @soybeanjs [<samp>(24bb6)</samp>](https://github.com/soybeanjs/soybean-admin/commit/24bb6d9)
+  - update deps & fix sass usage &nbsp;-&nbsp; by @soybeanjs [<samp>(71e63)</samp>](https://github.com/soybeanjs/soybean-admin/commit/71e6307)
+- **types**:
+  - remove type declaration for document.startViewTransition (TypeScript 5.6 includes it) &nbsp;-&nbsp; by @NHZEX in https://github.com/soybeanjs/soybean-admin/issues/633 [<samp>(83ba7)</samp>](https://github.com/soybeanjs/soybean-admin/commit/83ba798)
+
+### &nbsp;&nbsp;&nbsp;🎨 Styles
+
+- **projects**: reduce ambiguity in theme configuration instructions. &nbsp;-&nbsp; by @Azir-11 [<samp>(75cbf)</samp>](https://github.com/soybeanjs/soybean-admin/commit/75cbfbb)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;[![JOU-amjs](https://github.com/JOU-amjs.png?size=48)](https://github.com/JOU-amjs)&nbsp;&nbsp;[![Azir-11](https://github.com/Azir-11.png?size=48)](https://github.com/Azir-11)&nbsp;&nbsp;[![NHZEX](https://github.com/NHZEX.png?size=48)](https://github.com/NHZEX)&nbsp;&nbsp;
+
 ## [v1.3.7](https://github.com/soybeanjs/soybean-admin/compare/v1.3.6...v1.3.7) (2024-09-21)
 
 ### &nbsp;&nbsp;&nbsp;🚨 Breaking Changes

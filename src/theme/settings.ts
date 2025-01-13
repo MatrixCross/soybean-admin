@@ -12,6 +12,7 @@ export const themeSettings: App.Theme.ThemeSetting = {
     error: '#f5222d'
   },
   isInfoFollowPrimary: true,
+  resetCacheStrategy: 'close',
   layout: {
     mode: 'vertical',
     scrollMode: 'content',
@@ -26,6 +27,9 @@ export const themeSettings: App.Theme.ThemeSetting = {
     breadcrumb: {
       visible: true,
       showIcon: true
+    },
+    multilingual: {
+      visible: true
     }
   },
   tab: {

@@ -109,11 +109,14 @@ const local: App.I18n.Schema = {
       breadcrumb: {
         visible: 'Breadcrumb Visible',
         showIcon: 'Breadcrumb Icon Visible'
+      },
+      multilingual: {
+        visible: 'Display multilingual button'
       }
     },
     tab: {
       visible: 'Tab Visible',
-      cache: 'Tab Cache',
+      cache: 'Tag Bar Info Cache',
       height: 'Tab Height',
       mode: {
         title: 'Tab Mode',
@@ -141,6 +144,11 @@ const local: App.I18n.Schema = {
     },
     themeDrawerTitle: 'Theme Configuration',
     pageFunTitle: 'Page Function',
+    resetCacheStrategy: {
+      title: 'Reset Cache Strategy',
+      close: 'Close Page',
+      refresh: 'Refresh Page'
+    },
     configOperation: {
       copyConfig: 'Copy Config',
       copySuccessMsg: 'Copy Success, Please replace the variable "themeSettings" in "src/theme/settings.ts"',
